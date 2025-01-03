@@ -6,8 +6,26 @@ using System.Threading.Tasks;
 
 namespace LogicLibrary
 {
-    internal class Customer
+    public class Customer:User
     {
+
+        public string GetTheLoginStatus()
+        {
+            bool s = base.Status;
+            string userStatus;
+            if (s)
+            {
+
+
+                userStatus="You have logged in successfully....";
+            }
+            else
+            {
+                userStatus="Some problem occusred while login";
+            }
+            return userStatus;
+        }
+
         int _custid;
         string _custname;
 
