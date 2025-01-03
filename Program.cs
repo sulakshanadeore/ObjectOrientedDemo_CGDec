@@ -29,6 +29,27 @@ internal class Program
         //double area=m.CalculateAreaOfCircle();
         //Console.WriteLine(area);
 
+        //User u=new User();
+        Customer c=new Customer();
+       c.Login("anushka", "Anu@123");
+       string isLoggedIn= c.GetTheLoginStatus();
+        Console.WriteLine(isLoggedIn);
+
+        //if (status==true)
+        //{
+        //    Console.WriteLine("Welcome");
+        
+
+        //}
+        //else {
+
+        //    Console.WriteLine("chekc user id password");
+        //    c.GetTheLoginStatus();
+
+        //}
+        
+
+
         Products.Greet();
         Console.WriteLine("Do u want add products");
         char ans = char.Parse(Console.ReadLine());
